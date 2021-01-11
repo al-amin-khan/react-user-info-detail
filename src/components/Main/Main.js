@@ -18,7 +18,7 @@ const Main = () => {
           <Row>
           {
             users.map(user => 
-                          <Col md={4} >
+                          <Col md={4} key={user.id}>
                             <User user={user}></User>
                           </Col>
                     )
